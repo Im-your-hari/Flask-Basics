@@ -1,0 +1,27 @@
+<html>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo">My Site</h1>
+				<strong>
+					<nav>
+						<ul class="menu">
+							<li><a href="{{url_for('primary')}}">HOME</li>
+							<li><a href="{{url_for('about')}}">ABOUT</li>
+						</ul>
+					</nav>
+				</strong>
+			</div>
+		</header>
+		<center>
+			<font color="red">
+				<h1>
+					<b>
+						{% block content %}
+						{% endblock %}
+					</b>
+				</h1>
+			</font>
+		</center>	
+	</body>
+</html>
